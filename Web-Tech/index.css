@@ -1,0 +1,47 @@
+body {
+    color: #f6efef;
+    text-align: left;
+    padding: 40px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('Home-CW2.jpg'); 
+}
+
+header {
+    background-color: #007bff;
+    color: #252424;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-size: larger;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 3px 2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    opacity: 70%;
+}
+
+section {
+    padding: 20px;
+}

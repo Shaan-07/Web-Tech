@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Data Centers Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cloud Data Centers Map</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="issues.html">Issues</a></li>
+                <li><a href="uses.html">Uses</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="solution.html">Solution</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section>
+            <div id="map"></div>
+        </section>
+    </div>
+    <footer>
+        <p> Shaan Shaikh(201803653)</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([51.505, -0.09], 3);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        var dataCenters = [
+            { name: "Google Cloud 1", location: [51.5074, -0.5700] },
+            { name: "Microsoft Azure 1", location: [51.5085, -0.1257] },
+            { name: "Microsoft Azure 2", location: [51.6833, -3.3833] },
+            { name: "Microsoft Azure 3", location: [52.2048, 0.1202] },
+            { name: "AWS 2", location: [53.4722, -2.2933] },
+            { name: "AWS 1", location: [51.5074, -0.0050] },
+            { name: "AWS 3", location: [55.9532, -3.1882] },
+            
+        ];
+
+        dataCenters.forEach(function (dataCenter) {
+            L.marker(dataCenter.location).addTo(map)
+                .bindPopup(dataCenter.name);
+        });
+    </script>
+</body>
+</html>

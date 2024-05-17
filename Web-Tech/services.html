@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="styles.js"></script>
+    <script src="piechart.js"></script>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #pieChartContainer {
+            text-align: center;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #heading {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cloud Computing Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="issues.html">Issues</a></li>
+                <li><a href="uses.html">Uses</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="solution.html">Solution</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section>
+            <div style="text-align: center;">
+                <h2>Cloud Computing Services</h2>
+                <p>There are 3 main cloud service providers in the market: AWS, Azure, and Google Cloud.</p>
+            </div>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Provider</th>
+                </tr>
+                <tr>
+                    <td>EC2 (Elastic Compute Cloud)</td>
+                    <td>Scalable virtual servers in the cloud</td>
+                    <td>AWS (Amazon Web Services)</td>
+                </tr>
+                <tr>
+                    <td>S3 (Simple Storage Service)</td>
+                    <td>Scalable object storage in the cloud</td>
+                    <td>AWS (Amazon Web Services)</td>
+                </tr>
+                <tr>
+                    <td>RDS (Relational Database Service)</td>
+                    <td>Managed relational database service</td>
+                    <td>AWS (Amazon Web Services)</td>
+                </tr>
+                <tr>
+                    <td>Virtual Machines</td>
+                    <td>Scalable compute in the cloud</td>
+                    <td>Azure</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>Scalable, durable cloud storage</td>
+                    <td>Azure</td>
+                </tr>
+                <tr>
+                    <td>Azure SQL Database</td>
+                    <td>Fully managed, secure SQL database</td>
+                    <td>Azure</td>
+                </tr>
+                <tr>
+                    <td>Compute Engine</td>
+                    <td>Virtual machines in Google's data centers</td>
+                    <td>Google Cloud</td>
+                </tr>
+                <tr>
+                    <td>Cloud Storage</td>
+                    <td>Object storage that’s secure, durable, and scalable</td>
+                    <td>Google Cloud</td>
+                </tr>
+                <tr>
+                    <td>BigQuery</td>
+                    <td>Fully managed, serverless data warehouse</td>
+                    <td>Google Cloud</td>
+                </tr>
+            </table>
+            <div id="heading">
+                <h3>Market Share of Cloud Services:-</h3>
+            </div>
+            <div id="pieChartContainer">
+                <canvas id="myPieChart" style="width: 500px; height: 500px;"></canvas>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p> Shaan Shaikh(201803653)</p>
+    </footer>
+</body>
+</html>
